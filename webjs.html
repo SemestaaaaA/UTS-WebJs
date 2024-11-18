@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator dengan Popup Kustom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><center>
+    <div class="card">
+    <h2>Kalkulator Sederhana <br>F55123032</h2>
+    <label for="bil1">Bil 1:</label>
+    <input type="number" id="bil1"><br><br>
+
+    <label for="bil2">Bil 2:</label>
+    <input type="number" id="bil2"><br><br>
+
+    <button onclick="hitung('+')">+</button>
+    <button onclick="hitung('-')">-</button>
+    <button onclick="hitung('*')">x</button>
+    <button onclick="hitung('/')">/</button>
+    </div>
+
+    <!-- Overlay dan Popup -->
+    <div class="overlay" id="popupOverlay">
+        <div class="popup" id="popupContent">
+            <p id="popupText">Hasil akan muncul di sini</p>
+            <button onclick="tutupPopup()">Tutup</button>
+        </div>
+    </div>
+
+    <script src="webjs.js"></script>
+</center>
+</body>
+</html>
